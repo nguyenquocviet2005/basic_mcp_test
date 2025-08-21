@@ -1,0 +1,14 @@
+{
+    "inputs": [],
+    "servers": {
+       "hello-mcp": {
+           "command": "/home/viet2005/Documents/mcp_for_beginners/venv/bin/python",
+           "args": [
+               "server.py"
+           ],
+           "env": {
+               "PYTHONPATH": "${workspaceFolder}"
+           }
+       }
+    }
+}
