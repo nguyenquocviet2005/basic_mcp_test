@@ -1,0 +1,15 @@
+[Unit]
+Description=MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/basic_mcp_test
+Environment=PATH=/home/ubuntu/basic_mcp_test/venv/bin
+ExecStart=/home/ubuntu/basic_mcp_test/venv/bin/python http_streaming_server.py mcp
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
